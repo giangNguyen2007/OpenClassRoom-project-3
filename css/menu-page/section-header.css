@@ -1,0 +1,45 @@
+/* =========== SECTION 1 - HEADER ========= */
+
+.header{
+    height: 63px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+    .header__logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .header__logo{
+            width: 197px;
+        }
+
+    .header__icon-goback-link{
+        position: absolute;
+        top: 18px;
+        left: 10px;
+
+    }
+        .header__icon-goback-link{
+            width: 30px;
+            height: 30px;
+        }
+
+
+/* =============== SECTION 2- MAIN / IMAGE ========== */
+
+.main__img{
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.main__img-decalage{
+    width: 100%;
+    height: 250px;
+}

@@ -1,0 +1,119 @@
+/* ============== 3/3 SECTION RESTAURANT CARDS =========== */
+
+.section__resto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--grey-bg-color);
+    padding: 20px 10px 10px 10px;
+}
+
+    .resto-title-container{
+        width: 100%;
+    }
+    
+    .resto__card-container{
+        max-width: 1080px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+            
+            .resto__card{
+                width: 100%;
+                border-radius: 20px;
+                background-color: white;
+                cursor: pointer;
+                
+            }
+
+                .resto__card-link{
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .resto__card-img{
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 20px 20px 0px 0px;
+                }
+
+                .resto__card-info-container{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 20px 20px 15px;
+                }
+                    .resto__card-info h2{
+                        font-size: 18px;
+                        margin: 0;
+                    }
+
+                    .resto__card-info p{
+                        margin: 10px 0px 0px 0px;
+                    }
+
+                    .resto__card-icon-container{
+                        height: 21px;
+                        display: flex;
+                    }
+            
+                    .resto__card-icon-active{
+                        display: none;
+                    }
+            
+                    .resto__card-icon-container:hover .resto__card-icon{
+                        display: none;
+                    }
+            
+                    .resto__card-icon-container:hover .resto__card-icon-active{
+                        display: block;
+                    }
+
+                .resto__card-nouveau{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80px;
+                    height: 29px;
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    background-color: var(--green-color);
+                }
+                
+                .resto__card-nouveau p{
+                    color: var(--green-font-color);
+                }
+
+                
+@media screen and (min-width: 600px){
+    .section__resto{
+        padding-left: min(8%, 180px);
+        padding-right: min(8%, 180px);
+    }
+
+    .resto__card-container{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: min(100px, 10%);
+        
+    }
+
+        .resto__card{
+            flex-basis: 40%;
+            flex-grow: 1;
+            margin-bottom: 30px;
+        }
+            .resto__card-link{
+                width: 100%;
+            }
+}

@@ -1,0 +1,71 @@
+.animate{
+    animation-name:appear;
+}
+
+.ani-index-page{
+    animation-duration: 3s;
+}
+
+
+@keyframes appear {
+    0%  {
+        opacity: 0;
+    }
+
+    50%  {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* ========= animation pour LOADER ========== */
+
+.loader{
+    height: 30px;
+    background-color: burlywood;
+    animation-name:loader;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    display: none;
+    margin-top: 200px;
+    margin-left: 30% ;
+}
+
+.loader p{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+@keyframes loader {
+    from  {
+        opacity: 1;
+        display: block;
+        width: 20%;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+        width: 40%;
+    }
+}
+
+
+/* =========== ANIMATION MENU PAGE ============= */
+
+.ani-entree{
+    animation-duration: 1s;
+}
+
+.ani-plat{
+    animation-duration: 3s;
+}
+
+.ani-dessert{
+    animation-duration: 5s;
+}

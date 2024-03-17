@@ -1,0 +1,10 @@
+
+@import '../master.css';
+@import '../footer.css';
+@import '../animate.css';
+
+
+@import './1-section-header.css';
+@import './2-section-title.css';
+@import './3-section-fonct.css';
+@import './4-section-resto.css';

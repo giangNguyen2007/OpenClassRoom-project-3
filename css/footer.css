@@ -1,0 +1,57 @@
+@import 'master.css';
+
+footer{
+    background-color: #353535;
+    padding: 20px;
+}
+    .footer__logo{
+        height: 27px;
+        width: fit-content;
+        margin-bottom: 10px;
+    }
+
+    .footer__info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+        .footer__item-compo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+            .footer__item-compo-logo{
+                height: 13px;
+            }
+
+            .footer__item-text{
+                color: white;
+                font-size: 15px;
+            }
+
+@media screen and (min-width: 600px){
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 0;
+        gap: 30px;
+    }
+        .footer__logo{
+            order: 2;
+            margin: 0;
+        }
+        .footer__info-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+
+            .footer__item-compo{
+                gap: 5px;
+            }
+}

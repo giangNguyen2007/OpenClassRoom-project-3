@@ -1,0 +1,26 @@
+@import '../master.css';
+@import '../footer.css';
+@import '../animate.css';
+
+@import './section-menu.css';
+@import './section-header.css';
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+    main {
+        padding: 0px;
+    }
+}
+
+
+
+
+
+
